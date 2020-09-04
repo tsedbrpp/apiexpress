@@ -1,0 +1,340 @@
+{
+  "rules": [
+    {
+      "rule": 1,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "men"
+          },
+          {
+            "value": "mortal"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 1,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "gender"
+          },
+          {
+            "value": "man"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 1,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "socrates"
+          },
+          {
+            "value": "mortal"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 1,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "E"
+          },
+          {
+            "object": "socrates"
+          },
+          {
+            "value": "immortal"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "strength"
+          },
+          {
+            "value": "strong"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "body"
+          },
+          {
+            "value": "hairy"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "gender"
+          },
+          {
+            "value": "man"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "lift"
+          },
+          {
+            "value": "yes"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "run"
+          },
+          {
+            "value": "fast"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "eat"
+          },
+          {
+            "value": "lots"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "strength"
+          },
+          {
+            "value": "strong"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 4,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "strength"
+          },
+          {
+            "value": "strong"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 4,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "convertO2"
+          },
+          {
+            "value": "breaths"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 4,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "men"
+          },
+          {
+            "value": "mortal"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    }
+  ]
+}

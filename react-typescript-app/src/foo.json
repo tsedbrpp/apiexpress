@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "text": "socrates",
+      "type": "multivalued",
+      "question": "is socrates",
+      "reference": "ref3",
+      "goal": "Goal 100",
+      "legals": {
+        "option": [
+          {
+            "value": "mortal"
+          },
+          {
+            "value": "immortal"
+          }
+        ]
+      }
+    },
+    {
+      "text": "strength",
+      "type": "multivalued",
+      "question": "is strength",
+      "reference": "ref4",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "strong"
+          },
+          {
+            "value": "weak"
+          }
+        ]
+      }
+    },
+    {
+      "text": "body",
+      "type": "multivalued",
+      "question": "is body",
+      "reference": "ref5",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "hairy"
+          },
+          {
+            "value": "bald"
+          }
+        ]
+      }
+    },
+    {
+      "text": "gender",
+      "type": "multivalued",
+      "question": "what is the gender",
+      "reference": "ref6",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "man"
+          },
+          {
+            "value": "women"
+          }
+        ]
+      }
+    },
+    {
+      "text": "lift",
+      "type": "multivalued",
+      "question": "lift",
+      "reference": "ref7",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "yes"
+          },
+          {
+            "value": "no"
+          }
+        ]
+      }
+    },
+    {
+      "text": "run",
+      "type": "multivalued",
+      "question": "run",
+      "reference": "ref8",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "fast"
+          },
+          {
+            "value": "slow"
+          }
+        ]
+      }
+    },
+    {
+      "text": "eat",
+      "type": "multivalued",
+      "question": "eat",
+      "reference": "ref9",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "lots"
+          },
+          {
+            "value": "few"
+          }
+        ]
+      }
+    },
+    {
+      "text": "convertO2",
+      "type": "multivalued",
+      "question": "how to breath",
+      "reference": "ref11",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "breaths"
+          },
+          {
+            "value": "gills"
+          }
+        ]
+      }
+    },
+    {
+      "text": "men",
+      "type": "multivalued",
+      "question": "mortal?",
+      "reference": "ref 12",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": "mortal"
+          },
+          {
+            "value": "immortal"
+          }
+        ]
+      }
+    },
+    {
+      "text": "",
+      "type": "",
+      "question": "",
+      "reference": "",
+      "goal": "",
+      "legals": {
+        "option": [
+          {
+            "value": ""
+          },
+          {
+            "value": ""
+          }
+        ]
+      }
+    }
+  ]
+}
