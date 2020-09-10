@@ -2,7 +2,7 @@ import KnowledgeBase from "./KnowledgeBase";
 import Nodes from "./Nodes";
 import { QuestionType } from "./Question";
 import LogicSet from "./LogicSet";
-import Rule from "./Rule";
+
 
 export default class InferenceEngine {
   _pursued: boolean = false;
@@ -55,7 +55,7 @@ export default class InferenceEngine {
 
         for (let i = 0; i < len; i++) {
           let result = await this.TestUm(currentRule.MyLogic[i]);
-          if (result == false) fails = true;
+          if (result === false) fails = true;
         }
 
         /*for (let logic of aRule.MyLogic) {
@@ -77,7 +77,7 @@ export default class InferenceEngine {
           this._pursued = true;
         }
       }
-      if (!this._solved && !(currentObject.Name == InferenceEngine.Goal)) {
+      if (!this._solved && !(currentObject.Name === InferenceEngine.Goal)) {
         let anObject = this.Nodes.FindObject(currentObject.Name);
         if (anObject != null) {
           // let theQuestion = anObject.TheQuestion;

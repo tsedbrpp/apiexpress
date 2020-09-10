@@ -12,7 +12,7 @@ export default class AskAnswer {
     { id: "convertO2", value: "breaths" },
   ];
 
-
+  private selection:string = '';
   // @ts-ignore
   private static SetState: React.Dispatch<React.SetStateAction<QuestionState | undefined>>;
   // @ts-ignore
@@ -38,16 +38,40 @@ export default class AskAnswer {
     //   const { answer } = await get([textOfQuestion]);
     // Get two properties from the user: the `password` and `food`.
     //let p = Promise.resolve('success').then( () => this.key[anObject.Name])
-
-    let obj = this.key.find((obj) => obj.id == anObject.Name);
+   return await this.poll(3000,5)
+   /* let obj = this.key.find((obj) => obj.id == anObject.Name);
     // @ts-ignore
     console.log("returning in five sec " + obj.value);
-    /*return obj.value;*/
+    /!*return obj.value;*!/
     return new Promise((resolve) => {
       setTimeout(() => {
         // @ts-ignore
         resolve(obj.value);
-      }, 1000);
-    });
+      }, 2000);
+    });*/
+  }
+    public  async poll ( interval:number, maxAttempts:number ):Promise<string> {
+        let attempts = 0;
+
+        const executePoll = async (resolve: (arg0: any) => any, reject: (arg0: Error) => any) => {
+
+            attempts++;
+
+            if (this.selection) {
+                return resolve(this.selection);
+            } else if (maxAttempts && attempts === maxAttempts) {
+                return reject(new Error('Exceeded timeout attempts'));
+            } else {
+                setTimeout(executePoll, interval, resolve, reject);
+            }
+        };
+              this.selection = '';
+        return new Promise(executePoll);
+    };
+
+
+  public  answer(selection : string ): void {
+      this.selection = selection;
+      console.log( "**********************got selected" + selection);
   }
 }

@@ -4,6 +4,9 @@ import ModelUpper from "./ModelUpper";
 import QuestionState from "./QuestionState";
 import AskAnswer from "./AskAnswer";
 
+function answerQuestion(answer:string ) {
+  ModelUpper.GetInstance().getMyAsk().answer(answer);
+}
 const  TheQuestion: React.FC = () => {
     const [state,setState] = React.useState<QuestionState>();
    // const refContainer  = React.useRef<HTMLElement>(null);
@@ -12,7 +15,12 @@ const  TheQuestion: React.FC = () => {
     <div className="commentForm" >
        {state?.name}</div>
 
-       <div> {state?.legals.map(i =><span> <button className="button" >{i}</button></span>)} </div>
+       <div> {state?.legals.map(i =><span>
+           <button
+               className="button"
+               value = {i}
+               onClick={ e => answerQuestion(i)}
+           >{i}</button></span>)} </div>
 
       </div>
 

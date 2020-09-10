@@ -1,5 +1,4 @@
 import InferenceEngine from "./InferenceEngine";
-import KnowledgeBase from "./KnowledgeBase";
 import CreateJSON from "./CreateJSON";
 import AskAnswer from "./AskAnswer";
 import AnObject from "./AnObject";
@@ -33,7 +32,12 @@ export default class ModelUpper {
 
   public async Ask(anObject: AnObject): Promise<string> {
     return await ModelUpper._instance._myAsk.Ask(anObject);
+
   }
+
+public getMyAsk() : AskAnswer{
+    return this._myAsk;
+}
 
   public async pursue(): Promise<boolean> {
     this._engine.Reset();
@@ -63,12 +67,6 @@ async function example_async() {
   await modelUpper.pursue();
 }
 
-async function error_handling_async() {
-  try {
-    await example_async();
-  } catch (error) {
-    console.error("An error occurred: ", error);
-  }
-}
+
 
 //error_handling_async();

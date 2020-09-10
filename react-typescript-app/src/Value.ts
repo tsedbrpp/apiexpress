@@ -29,9 +29,8 @@ export class Value {
   }
 
   public UrlString(): string {
-    let accum: string = "";
-    let flag: boolean = false;
-    let aString = this.Name.split(" ");
+
+     let aString = this.Name.split(" ");
     const reducer = (accumulator: any, currentValue: any) => accumulator + currentValue;
     return this.Name.startsWith("URL:") ? aString.reduce(reducer) : "";
   }

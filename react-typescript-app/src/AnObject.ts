@@ -5,7 +5,7 @@ import ModelUpper from "./ModelUpper";
 import KnowledgeBase from "./KnowledgeBase";
 
 export default class AnObject {
-  static EPSILON: Number = 0.001;
+  static  EPSILON: Number = 0.001;
 
   public Out = new Outputer();
   public Name: string;
