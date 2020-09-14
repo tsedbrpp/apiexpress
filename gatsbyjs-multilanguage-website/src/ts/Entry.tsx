@@ -12,11 +12,12 @@ import TheQuestion from "./TheQuestion";
 function Entry() {
   return (
     <div className="App">
+      <img src={"https://a.storyblok.com/f/92556/751x960/896657faf2/monkey.jpg"}/>
       <header className="App-header">
         <MyHeader name={"Developer"}/>;
         <Form/>
         <TheQuestion/>
-        <img src={logo} className="App-logo" alt="logo" />
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
