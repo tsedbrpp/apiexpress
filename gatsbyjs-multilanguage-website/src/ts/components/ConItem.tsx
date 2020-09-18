@@ -8,7 +8,7 @@ interface myInterface {
 const ConItem: React.FunctionComponent<myInterface> = (props: myInterface) => {
  return (
    <div>
-     {console.log("in conItem")}
+
   <h1>Hola, {props.call}! </h1>
    <ul>
      {props.name.map( item => <li key={item.Name}>{item.Name}</li> )}

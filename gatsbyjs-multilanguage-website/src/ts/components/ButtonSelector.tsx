@@ -9,39 +9,41 @@ import AnObject from "../AnObject"
 
 interface myInterface {
   QSetter: React.Dispatch<React.SetStateAction<boolean>>
-
+  CSetter: React.Dispatch<React.SetStateAction<boolean>>
+  ConclusionSetter: React.Dispatch<React.SetStateAction<Array<AnObject>>>
 }
 
-const handleClick = async () => {
+const handleClick = async (ConclusionSetter:React.Dispatch<React.SetStateAction<Array<AnObject>>>) => {
   // The handler won't be called if the button
   // is disabled, so if we got here, it's safe
   // to trigger the click.
   let modelUpper = ModelUpper.GetInstance();
   await modelUpper.pursue();
-}
-const resetClick = (setter:React.Dispatch<React.SetStateAction<boolean>>) =>
-{
-  setter(true);
+  let conclude = await ModelUpper.GetInstance().getConclusions();
+  ConclusionSetter(conclude);
 
+}
+const consult = async (QSetter:React.Dispatch<React.SetStateAction<boolean>>,CSetter:React.Dispatch<React.SetStateAction<boolean>>,ConclusionSetter: React.Dispatch<React.SetStateAction<Array<AnObject>>>) =>
+{
+  QSetter(true);
+  CSetter(false);
+  ConclusionSetter([]);
+  await handleClick(ConclusionSetter)
+  QSetter(false);
+  CSetter(true);
 
 }
 const  ButtonSelector:  React.FunctionComponent<myInterface> = (props:myInterface) => {
   const SetShowQ: React.Dispatch<React.SetStateAction<boolean>> = props.QSetter ;
+  const SetShowC: React.Dispatch<React.SetStateAction<boolean>> = props.CSetter ;
+  const ConclusionSetter:React.Dispatch<React.SetStateAction<Array<AnObject>>> = props.ConclusionSetter ;
   return (
     <div>
 
-  <Button variant="contained" color="primary" onClick={handleClick} >
-    Primary
+  <Button variant="contained" color="secondary" onClick={() => consult(SetShowQ,SetShowC,ConclusionSetter)}>
+  New Consultation
   </Button>
-  <Button variant="contained" color="secondary" onClick={() => resetClick(SetShowQ)}>
-    Secondary
-  </Button>
-  <Button variant="contained" disabled>
-    Disabled
-  </Button>
-  <Button variant="contained" color="primary" href="#contained-buttons">
-    Link
-  </Button>
+
     </div>
 )
 }

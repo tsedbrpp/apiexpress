@@ -11,31 +11,38 @@ const initialState:IStateReducerForm = {
   status: REQUEST_STATUS.LOADING,
   error: null
 }
-
+interface myInterface {
+   conclusions: Array<AnObject>
+}
 
 // @ts-ignore
-const  TheConclusion: React.FC = () => {
+const TheConclusion: React.FunctionComponent<myInterface> = (props: myInterface) => {
+
   const classes = useStyles();
 
-  const [conclusions, setConclusions] = React.useState<Array<AnObject> | null >(null);
+ // const [conclusions, setConclusions] = React.useState<Array<AnObject> | null >(null);
 
-  useEffect(() => {
-   if(!conclusions) {
+ /* useEffect(() => {
+   if((props.conclusions.length === 0)) {
      getConclusions();
     }
-  },[])
+  },[])*/
 
- const getConclusions = async() => {
+/* const getConclusions = async() => {
     let conclude = await ModelUpper.GetInstance().getConclusions();
-    setConclusions(conclude);
- }
+    props.ConclusionSetter(conclude);
 
-if(!conclusions) {
+ }*/
+
+if(props.conclusions.length === 0)
   return <div>waiting</div>
-}
+
 else {
+         let con = [...props.conclusions]
+
+
    return <div>
-     <ConItem name={conclusions} call={"theere"}></ConItem>
+     <ConItem name={con} call={"theere"}></ConItem>
     </div>
   /* (
  /!* conclusions?.map( item =>

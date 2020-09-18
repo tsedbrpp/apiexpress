@@ -14,15 +14,27 @@ import AnObject from "../AnObject"
 function Entry() {
 
   const [showQ, setShowQ] = useState(true);
+  const [showC, setShowC] = useState(false);
+  const [conclusions, setConclusions] = React.useState<Array<AnObject>  >([]);
+  if(showQ){
+    return (
+    <div className="App">
+    <header className="App-header">
+      <MyHeader name={"Developer"}/>;
+      <ButtonSelector ConclusionSetter={setConclusions} QSetter={setShowQ} CSetter={setShowC}/>
+      <TheQuestion show={showQ} />
+    </header>
+    </div>)
 
+  }
+ else
   return (
     <div className="App">
 
       <header className="App-header">
         <MyHeader name={"Developer"}/>;
-        <ButtonSelector  QSetter={setShowQ}/>
-        <TheQuestion show={showQ} />
-        <TheConclusion QSetter={setShowQ}></TheConclusion>
+        <ButtonSelector ConclusionSetter={setConclusions} QSetter={setShowQ} CSetter={setShowC}/>
+        <TheConclusion conclusions={conclusions} ></TheConclusion>
 
       </header>
     </div>
