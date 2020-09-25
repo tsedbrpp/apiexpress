@@ -7,10 +7,10 @@ const Teaser = (props) => (
     <div className="jumbotron jumbotron-fluid">
       <div className="container">
         <h1 className="display-4">{ props.blok.headline }</h1>
-        <p className="lead">so what</p>
+        <p className="lead">Instant Traveling Expert Advisor</p>
         <p className="lead">
-          <Link className="btn btn-primary" to={'/blog/'}>
-            Blog Posts ers
+          <Link className="btn btn-primary" to={'/page-2'}>
+        Example Demo
           </Link>
         </p>
       </div>

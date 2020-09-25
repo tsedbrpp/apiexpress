@@ -6,7 +6,9 @@ const Feature = (props) => (
     <div className="col-4">
       <h2>{props.blok.name}</h2>
     </div>
+
   </SbEditable>
+
 )
 
 export default Feature
