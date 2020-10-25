@@ -2,7 +2,7 @@
 
 
 module.exports = {
-    apiKey: "AIzaSyCdUVaXufzOaw3SfTuZEMd73RwG1O4hOp4",
+    apiKey: "AIzaSyBH6ye3EA2GZICdbuUQ94hDHNjH0iNmu70",
     authDomain: "youcanvote-5be45.firebaseapp.com",
     databaseURL: "https://youcanvote-5be45.firebaseio.com",
     projectId: "youcanvote-5be45",
@@ -14,4 +14,4 @@ module.exports = {
 
 // Initialize Firebase
 
-//firebase.analytics();
+//firebase.analytics();S
