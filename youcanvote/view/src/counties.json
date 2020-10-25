@@ -1,0 +1,400 @@
+{
+  "rules": [
+    {
+      "label": "Alamance",
+      "value": "ALAMANCE"
+    },
+    {
+      "label": "Alexander",
+      "value": "ALEXANDER"
+    },
+    {
+      "label": "Alleghany",
+      "value": "ALLEGHANY"
+    },
+    {
+      "label": "Anson",
+      "value": "ANSON"
+    },
+    {
+      "label": "Avery",
+      "value": "AVERY"
+    },
+    {
+      "label": "Beaufort",
+      "value": "BEAUFORT"
+    },
+    {
+      "label": "Bertie",
+      "value": "BERTIE"
+    },
+    {
+      "label": "Bladen",
+      "value": "BLADEN"
+    },
+    {
+      "label": "Brunswick",
+      "value": "BRUNSWICK"
+    },
+    {
+      "label": "Buncombe",
+      "value": "BUNCOMBE"
+    },
+    {
+      "label": "Burke",
+      "value": "BURKE"
+    },
+    {
+      "label": "Cabarrus",
+      "value": "CABARRUS"
+    },
+    {
+      "label": "Caldwell",
+      "value": "CALDWELL"
+    },
+    {
+      "label": "Camden",
+      "value": "CAMDEN"
+    },
+    {
+      "label": "Carteret",
+      "value": "CARTERET"
+    },
+    {
+      "label": "Caswell",
+      "value": "CASWELL"
+    },
+    {
+      "label": "Catawba",
+      "value": "CATAWBA"
+    },
+    {
+      "label": "Chatham",
+      "value": "CHATHAM"
+    },
+    {
+      "label": "Cherokee",
+      "value": "CHEROKEE"
+    },
+    {
+      "label": "Chowan",
+      "value": "CHOWAN"
+    },
+    {
+      "label": "Clay",
+      "value": "CLAY"
+    },
+    {
+      "label": "Cleveland",
+      "value": "CLEVELAND"
+    },
+    {
+      "label": "Columbus",
+      "value": "COLUMBUS"
+    },
+    {
+      "label": "Craven",
+      "value": "CRAVEN"
+    },
+    {
+      "label": "Cumberland",
+      "value": "CUMBERLAND"
+    },
+    {
+      "label": "Currituck",
+      "value": "CURRITUCK"
+    },
+    {
+      "label": "Dare",
+      "value": "DARE"
+    },
+    {
+      "label": "Davidson",
+      "value": "DAVIDSON"
+    },
+    {
+      "label": "Davie",
+      "value": "DAVIE"
+    },
+    {
+      "label": "Duplin",
+      "value": "DUPLIN"
+    },
+    {
+      "label": "Durham",
+      "value": "DURHAM"
+    },
+    {
+      "label": "Edgecombe",
+      "value": "EDGECOMBE"
+    },
+    {
+      "label": "Forsyth",
+      "value": "FORSYTH"
+    },
+    {
+      "label": "Franklin",
+      "value": "FRANKLIN"
+    },
+    {
+      "label": "Gaston",
+      "value": "GASTON"
+    },
+    {
+      "label": "Gates ",
+      "value": "GATES"
+    },
+    {
+      "label": "Graham",
+      "value": "GRAHAM"
+    },
+    {
+      "label": "Granville",
+      "value": "GRANVILLE"
+    },
+    {
+      "label": "Greene",
+      "value": "GREENE"
+    },
+    {
+      "label": "Guilford",
+      "value": "GUILFORD"
+    },
+    {
+      "label": "Halifax",
+      "value": "HALIFAX"
+    },
+    {
+      "label": "Harnett",
+      "value": "HARNETT"
+    },
+    {
+      "label": "HAYWOOD",
+      "value": "HAYWOOD"
+    },
+    {
+      "label": "Henderson",
+      "value": "HENDERSON"
+    },
+    {
+      "label": "Hertford",
+      "value": "HERTFORD"
+    },
+    {
+      "label": "Hoke",
+      "value": "HOKE"
+    },
+    {
+      "label": "Hyde",
+      "value": "HYDE"
+    },
+    {
+      "label": "Iredell",
+      "value": "IREDELL"
+    },
+    {
+      "label": "Jackson",
+      "value": "JACKSON"
+    },
+    {
+      "label": "Johnston",
+      "value": "JOHNSTON"
+    },
+    {
+      "label": "Jones",
+      "value": "JONES"
+    },
+    {
+      "label": "Lee County",
+      "value": "LEE COUNTY"
+    },
+    {
+      "label": "Lenoir",
+      "value": "LENOIR"
+    },
+    {
+      "label": "Lincoln",
+      "value": "LINCOLN"
+    },
+    {
+      "label": "Macon",
+      "value": "MACON"
+    },
+    {
+      "label": "Madison",
+      "value": "MADISON"
+    },
+    {
+      "label": "Martin",
+      "value": "MARTIN"
+    },
+    {
+      "label": "McDowell",
+      "value": "MCDOWELL"
+    },
+    {
+      "label": "Mecklenburg",
+      "value": "MECKLENBURG"
+    },
+    {
+      "label": "MItchell",
+      "value": "MITCHELL"
+    },
+    {
+      "label": "Montgomery",
+      "value": "MONTGOMERY"
+    },
+    {
+      "label": "Moore",
+      "value": "MOORE"
+    },
+    {
+      "label": "Nash",
+      "value": "NASH"
+    },
+    {
+      "label": "New Hanover",
+      "value": "NEW HANOVER"
+    },
+    {
+      "label": "Northampton",
+      "value": "NORTHAMPTON"
+    },
+    {
+      "label": "Onslow",
+      "value": "ONSLOW"
+    },
+    {
+      "label": "Orange",
+      "value": "ORANGE"
+    },
+    {
+      "label": "Pamlico",
+      "value": "PAMLICO"
+    },
+    {
+      "label": "Pasquotank",
+      "value": "PASQUOTANK"
+    },
+    {
+      "label": "Pender",
+      "value": "PENDER"
+    },
+    {
+      "label": "Perquimans",
+      "value": "PERQUIMANS"
+    },
+    {
+      "label": "Person",
+      "value": "PERSON"
+    },
+    {
+      "label": "Pitt",
+      "value": "PITT"
+    },
+    {
+      "label": "Polk",
+      "value": "POLK"
+    },
+    {
+      "label": "Randolph",
+      "value": "RANDOLPH"
+    },
+    {
+      "label": "Richmond",
+      "value": "RICHMOND"
+    },
+    {
+      "label": "Robeson",
+      "value": "ROBESON"
+    },
+    {
+      "label": "Rockingham",
+      "value": "ROCKINGHAM"
+    },
+    {
+      "label": "Rowan",
+      "value": "ROWAN"
+    },
+    {
+      "label": "Rutherford",
+      "value": "RUTHERFORD"
+    },
+    {
+      "label": "Sampson",
+      "value": "SAMPSON"
+    },
+    {
+      "label": "Scotland",
+      "value": "SCOTLAND"
+    },
+    {
+      "label": "Stanly",
+      "value": "STANLY"
+    },
+    {
+      "label": "Stokes",
+      "value": "STOKES"
+    },
+    {
+      "label": "Surry County",
+      "value": "SURRY COUNTY"
+    },
+    {
+      "label": "Swain",
+      "value": "SWAIN"
+    },
+    {
+      "label": "Transylvania",
+      "value": "TRANSYLVANIA"
+    },
+    {
+      "label": "Tyrrell",
+      "value": "TYRRELL"
+    },
+    {
+      "label": "Union",
+      "value": "UNION"
+    },
+    {
+      "label": "Vance",
+      "value": "VANCE"
+    },
+    {
+      "label": "Wake",
+      "value": "WAKE"
+    },
+    {
+      "label": "Warren",
+      "value": "WARREN"
+    },
+    {
+      "label": "Washington",
+      "value": "WASHINGTON"
+    },
+    {
+      "label": "WATAUGA",
+      "value": "WATAUGA"
+    },
+    {
+      "label": "BOONE",
+      "value": "BOONE"
+    },
+    {
+      "label": "Wayne",
+      "value": "WAYNE"
+    },
+    {
+      "label": "Wilkes",
+      "value": "WILKES"
+    },
+    {
+      "label": "Wilson",
+      "value": "WILSON"
+    },
+    {
+      "label": "Yancey",
+      "value": "YANCEY"
+    }
+  ]
+}
