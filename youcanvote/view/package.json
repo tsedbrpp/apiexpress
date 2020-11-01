@@ -11,6 +11,8 @@
     "axios": "^0.20.0",
     "chroma-js": "^2.1.0",
     "dayjs": "^1.9.3",
+    "firebase": "^8.0.0",
+    "firebase-admin": "^9.3.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",

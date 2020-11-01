@@ -1,0 +1,340 @@
+{
+  "rules": [
+    {
+      "rule": 1,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "parents"
+          },
+          {
+            "value": "yes"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 1,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "cinema"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "weather"
+          },
+          {
+            "value": "sunny"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "cinema"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "weather"
+          },
+          {
+            "value": "windy"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "money"
+          },
+          {
+            "value": "rich"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 3,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "shopping"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 4,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "weather"
+          },
+          {
+            "value": "sunny"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 4,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "shopping"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 5,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "weather"
+          },
+          {
+            "value": "windy"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 5,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "money"
+          },
+          {
+            "value": "poor"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 5,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "cinema"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "premise",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "weather"
+          },
+          {
+            "value": "rainy"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    },
+    {
+      "rule": 2,
+      "type": "conclusion",
+      "Reference": "test",
+      "statements": {
+        "statement": [
+          {
+            "comparison": "equals"
+          },
+          {
+            "logic": "A"
+          },
+          {
+            "object": "activity"
+          },
+          {
+            "value": "stayin"
+          },
+          {
+            "cert": 100
+          }
+        ]
+      }
+    }
+  ]
+}

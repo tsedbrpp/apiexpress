@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "text": "activity",
+      "type": "multivalued",
+      "question": "none",
+      "reference": "ref3",
+      "goal": "Goal 100",
+      "legals": {
+        "option": [
+          {  "width": "30%",
+            "title": "shopping"
+          },
+          {  "width": "30%",
+            "title": "cinema"
+          },
+          {  "width": "30%",
+            "title": "stayin"
+          }
+        ]
+      }
+    },
+    {
+      "text": "parents",
+      "type": "multivalued",
+      "question": "Are your parents visiting",
+      "reference": "ref4",
+      "goal": "",
+      "legals": {
+        "option": [
+          {  "width": "30%",
+             "title": "yes"
+          },
+          {
+            "width": "30%",
+            "title": "no"
+          }
+
+        ]
+      }
+    },
+    {
+      "text": "weather",
+      "type": "multivalued",
+      "question": "What is the Weather Like",
+      "reference": "ref5",
+      "goal": "",
+      "legals": {
+        "option": [
+          {  "width": "30%",
+            "title": "sunny"
+          },
+          {  "width": "30%",
+            "title": "windy"
+          },
+          {  "width": "30%",
+            "title": "rainy"
+          }
+        ]
+      }
+    },
+    {
+      "text": "money",
+      "type": "multivalued",
+      "question": "What is your money Situation",
+      "reference": "ref6",
+      "goal": "",
+      "legals": {
+        "option": [
+          {  "width": "30%",
+            "title": "rich"
+          },
+          {  "width": "30%",
+            "title": "poor"
+          }
+
+        ]
+      }
+    }
+  ]
+}

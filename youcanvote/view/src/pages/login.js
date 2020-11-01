@@ -1,7 +1,7 @@
 // login.js
 
 // Material UI components
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -14,6 +14,11 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Container from '@material-ui/core/Container';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import axios from 'axios';
+import firebase from "firebase"
+import config from '../util/config'
+
+
+
 const styles = (theme) => ({
     paper: {
         marginTop: theme.spacing(8),
@@ -43,6 +48,8 @@ const styles = (theme) => ({
 });
 
 
+
+
 class login extends Component {
     constructor(props) {
         super(props);
@@ -51,23 +58,69 @@ class login extends Component {
             email: '',
             password: '',
             errors: [],
-            loading: false
+            loading: false,
+
         };
     }
 
-    componentWillReceiveProps(nextProps) {
+
+
+  /*  componentWillReceiveProps(nextProps) {
         if (nextProps.UI.errors) {
             this.setState({
                 errors: nextProps.UI.errors
             });
         }
-    }
+    }*/
 
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value
         });
     };
+
+   handleGoogleLogin= async (event)=> {
+        event.preventDefault();
+
+    try {
+        this.setState({loading: true});
+
+
+
+
+       await firebase.initializeApp(config);
+        const provider = new firebase.auth.GoogleAuthProvider();
+       firebase.auth().signInWithPopup(provider)
+            .then((response) => {
+                console.log('successfull loged in ', response.user.displayName);
+                var id_token = response.user.getIdToken();
+                localStorage.setItem('AuthToken', `Bearer ${response.credential.accessToken}`);
+                this.setState({
+                    loading: false,
+                });
+                this.props.history.push('/');
+            })
+            .catch((error) => { console.error('there was an error signing in:', error)
+                return null;})
+
+    }
+       catch (error) {
+            console.error(error);
+
+        }
+    }
+
+
+    googleSignout = () => {
+        console.log("in signout");
+        firebase.auth().signOut()
+            .then(() => {
+                    console.log('logout successful');
+
+                }
+            )
+            .catch((error) => console.error("there was an error signin out"));
+    }
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -77,9 +130,9 @@ class login extends Component {
             password: this.state.password
         };
         axios
-            .post('/login', userData)
+            .post('https://us-central1-youcanvote-5be45.cloudfunctions.net/api/login', userData)
             .then((response) => {
-                console.log(response.data.token)
+
                 localStorage.setItem('AuthToken', `Bearer ${response.data.token}`);
                 this.setState({
                     loading: false,
@@ -87,12 +140,17 @@ class login extends Component {
                 this.props.history.push('/');
             })
             .catch((error) => {
+                if(error.response  && error.response.data){
                 this.setState({
                     errors: error.response.data,
                     loading: false
-                });
+                });}
+                else { console.log( error)}
             });
     };
+
+
+
 
     render() {
         const { classes } = this.props;
@@ -107,7 +165,8 @@ class login extends Component {
                     <Typography component="h1" variant="h5">
                         Login
                     </Typography>
-                    <button id="signin-google">sign in with Google</button>
+                    <Button variant="contained"  color="primary"  onClick={this.handleGoogleLogin}>sign in with Google</Button>
+                    <Button variant="contained"  color="secondary"  onClick={() => this.googleSignout}> sign out with Google</Button>
                     <form className={classes.form} noValidate>
                         <TextField
                             variant="outlined"

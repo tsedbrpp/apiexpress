@@ -14,7 +14,7 @@ export default class CreateJSON {
     // this.createTheObjects();
   }
 
-  /*public createSpreadSheetFile(): void {
+ public createSpreadSheetFile(): void {
     let parser = new (require("simple-excel-to-json").XlsParser)();
     let doc = parser.parseXls2Json("./example/sample.xlsx", { isNested: true });
     console.log(doc[0]);
@@ -38,7 +38,7 @@ export default class CreateJSON {
     let object = doc[1];
     file.set("rules", object);
     file.save();
-  }*/
+  }
 
 
 

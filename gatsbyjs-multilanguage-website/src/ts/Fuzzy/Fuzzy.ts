@@ -136,14 +136,22 @@ export default class Fuzzy {
     return lastValue;
   }
 
-  public findNum
+  public findNum(num:number): Array<DictionaryInfo> {
+    let memberships:Array<DictionaryInfo> = [];
+    let i: number = 0;
+    if (this._triangleList) {
 
+      for (i = 0; i < this._triangleList.length; i++) {
+        let aMembership = 100 * Membership.calcTriangularMembership(this._triangleList[i].left, this._triangleList[i].middle,
+          this._triangleList[i].right, num);
+        let aTerm = this._triangleList[i].term;
+        if (aMembership > 0)
+          memberships.push({ hedge: aTerm, strength: aMembership});
+      }
 
-
-
-
-
-
+    }
+      return memberships
+  }
 
 private HedgeText(num:number):string {
   if (this._hedgeDic) {

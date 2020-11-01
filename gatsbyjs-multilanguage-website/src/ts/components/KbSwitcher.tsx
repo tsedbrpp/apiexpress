@@ -9,14 +9,11 @@ import AnObject from "../AnObject"
 import useStyles from "../MakeStyles"
 import { useState } from "react"
 
-interface myInterface {
-  QSetter: React.Dispatch<React.SetStateAction<boolean>>
-  CSetter: React.Dispatch<React.SetStateAction<boolean>>
-  ConclusionSetter: React.Dispatch<React.SetStateAction<Array<AnObject>>>
-}
 
-const handleClick = async (ConclusionSetter:React.Dispatch<React.SetStateAction<Array<AnObject>>>) => {
 
+const handleClick = async (kb:string) => {
+
+  ModelUpper.ResetKB(kb)
 
 
   let modelUpper = ModelUpper.GetInstance();
@@ -38,9 +35,9 @@ const consult = async (count:number,setCount: React.Dispatch<React.SetStateActio
   CSetter(false);
 
 
-   await handleClick(ConclusionSetter)
-   QSetter(false);
-   CSetter(true);
+  await handleClick(ConclusionSetter)
+  QSetter(false);
+  CSetter(true);
 
 
 
@@ -54,12 +51,12 @@ const  ButtonSelector:  React.FunctionComponent<myInterface> = (props:myInterfac
   return (
     <div>
 
-  <Button variant="contained" color="secondary" onClick={() => consult(count,setCount,SetShowQ,SetShowC,ConclusionSetter)}>
-  New Consultation
-  </Button>
+      <Button variant="contained" color="secondary" onClick={() => consult(count,setCount,SetShowQ,SetShowC,ConclusionSetter)}>
+        New Consultation
+      </Button>
 
     </div>
-)
+  )
 }
 
 export default ButtonSelector

@@ -19,6 +19,8 @@ const {
     updateUserDetails
 } = require('./APIs/users')
 
+const cors = require('cors')({origin: true});
+app.use(cors);
 // Todos
 app.get('/todos', auth, getAllTodos);
 app.get('/todo/:todoId', auth, getOneTodo);

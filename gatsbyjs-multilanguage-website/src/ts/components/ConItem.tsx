@@ -11,7 +11,7 @@ const ConItem: React.FunctionComponent<myInterface> = (props: myInterface) => {
 
   <h1>Hola, {props.call}! </h1>
    <ul>
-     {props.name.map( item => <li key={item.Name}>{item.Name}</li> )}
+     {props.name.map( item => <li key={item.Name}>{item.Name} {item.PrintValues()}</li> )}
    </ul>
  <div>testing</div>
  </div>

@@ -94,7 +94,7 @@ class home extends Component {
         const authToken = localStorage.getItem('AuthToken');
         axios.defaults.headers.common = { Authorization: `${authToken}` };
         axios
-            .get('/user')
+            .get('https://us-central1-youcanvote-5be45.cloudfunctions.net/api/user')
             .then((response) => {
                 console.log(response.data);
                 this.setState({
@@ -109,6 +109,8 @@ class home extends Component {
                 });
             })
             .catch((error) => {
+               console.log("error  " + error)
+
                 if(error.response.status === 403) {
                     this.props.history.push('/login')
                 }

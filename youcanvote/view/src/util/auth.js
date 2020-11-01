@@ -4,3 +4,4 @@ export const authMiddleWare = (history) => {
         history.push('/login')
     }
 }
+/*  "proxy": "https://us-central1-youcanvote-5be45.cloudfunctions.net/api",*/
