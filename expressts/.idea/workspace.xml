@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a08fdc1d-1a5b-4972-9e3d-fe2d9aae4bb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Model/ClientUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Model/IConverter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Model/IStoreable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Model/KnowledgeBase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Model/StorableFunctions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/ApiServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/DatabaseServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/GSSPacketizer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/IResponseState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/MyAuthorizationServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/OnCreateUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/Services/Verifiers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/middleware/middleAuth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/KbConverters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/RuleObjectConverters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/UserConverters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/Validators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/WhereClause.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../apiexpress/functions/src/util/admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/expressapi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/functions/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/functions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/functions/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/APIs/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/ClientUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/ClientUser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IConverter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IConverter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IStoreable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IStoreable.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/IStoreable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/KnowledgeBase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/KnowledgeBase.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/KnowledgeBase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/StorableFunctions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/StorableFunctions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Model/StorableFunctions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/ApiServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/ApiServices.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/ApiServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/AuthorizationServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/AuthorizationServices.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/AuthorizationServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/DatabaseServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/DatabaseServices.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/GSSPacketizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/GSSPacketizer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/GSSPacketizer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/IResponseState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/IResponseState.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/IResponseState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/OnCreateUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/OnCreateUser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/Verifiers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/Verifiers.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/Services/Verifiers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/indexbak.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/middleware/middleAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/middleware/middleAuth.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/middleware/middleAuth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/KbConverters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/KbConverters.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/KbConverters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/UserConverters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/UserConverters.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/UserConverters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/WhereClause.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/WhereClause.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/WhereClause.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/admin.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/auth.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/validators.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/src/util/validators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../expressapi/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/components/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/components/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/components/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/components/layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/components/seo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/images/gatsby-astronaut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/images/gatsby-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/pages/404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/pages/page-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/pages/page-3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/AnObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/AskAnswer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/BodyParse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/CreateJSON.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/InferenceEngine.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/KnowledgeBase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Logic.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/LogicSet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/ModelUpper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Nodes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/ObjectFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Outputer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/OvPair.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Question.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/QuestionState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Rule.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Statement.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/Value.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/Entry.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/Form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/KBSelector.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/MyHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/TheQuestion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/foo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/op.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/pem.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/soc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/sum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/sum.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/using-typescript.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/utils/CacheContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/utils/admin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../youcanvote/functions/sendgrid.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../youcanvote/functions/util/spreadsheetParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../youcanvote/functions/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../youcanvote/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../youcanvote/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/MakeStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/MakeStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/ButtonSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/ButtonSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/Entry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/Entry.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/components/KbSwitcher.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/counties.json" beforeDir="false" afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/counties.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/foo1.json" beforeDir="false" afterPath="$PROJECT_DIR$/../gatsbyjs-multilanguage-website/src/ts/foo1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/functions/APIs/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/functions/APIs/todos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/view/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/view/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/view/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/view/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/view/src/components/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/view/src/components/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/view/src/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/view/src/pages/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../youcanvote/view/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../youcanvote/view/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nvYKacQyybPv3AjO48xPmje3OZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a08fdc1d-1a5b-4972-9e3d-fe2d9aae4bb9" name="Default Changelist" comment="" />
+      <created>1612271970647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612271970647</updated>
+      <workItem from="1612271972804" duration="172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
