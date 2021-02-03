@@ -19,6 +19,7 @@ class KbConverters implements IConverter {
       description: kb.description,
       spreadSheetURL: kb.spreadSheetURL,
       ruleObjects: kb.ruleObjects,
+      privateKb: kb.privateKb,
     };
   }
   // eslint-disable-next-line max-len,require-jsdoc
@@ -27,7 +28,7 @@ class KbConverters implements IConverter {
     const data = snapshot.data();
     if (data) {
       // eslint-disable-next-line max-len
-      const kb = new KnowledgeBase( data.uid, data.userName, data.title, data.description, data.spreadSheetURL, data.ruleObjects);
+      const kb = new KnowledgeBase( data.uid, data.userName, data.title, data.description, data.spreadSheetURL, data.ruleObjects, data.privateKb);
       kb.id = snapshot.id;
       return kb;
     }

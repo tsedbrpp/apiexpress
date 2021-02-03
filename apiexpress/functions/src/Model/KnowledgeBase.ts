@@ -3,6 +3,15 @@ import StorableFunctions from "./StorableFunctions";
 
 // eslint-disable-next-line require-jsdoc
 export default class KnowledgeBase extends StorableFunctions {
+  // eslint-disable-next-line require-jsdoc
+  get privateKb(): boolean | undefined {
+    return this._privateKb;
+  }
+
+  set privateKb(value: boolean | undefined) {
+    this._privateKb = value;
+  }
+
   get userName() {
     return this._userName;
   }
@@ -65,7 +74,7 @@ export default class KnowledgeBase extends StorableFunctions {
   set createdAt(value: number | undefined) {
     this._createdAt = value;
   }
-
+    private _privateKb:boolean | undefined
     private _createdAt:number | undefined;
     private _uid:string | undefined;
     private _userName: string | undefined;
@@ -75,8 +84,7 @@ export default class KnowledgeBase extends StorableFunctions {
     private _ruleObjects: string | undefined;
 
     // eslint-disable-next-line max-len,require-jsdoc
-    constructor(uid?:string, userName?:string | undefined, title?:string | undefined, description?:string | undefined, spreadSheetURl?:string | undefined, ruleObjects?:string | undefined) {
-
+    constructor(uid?:string, userName?:string | undefined, title?:string | undefined, description?:string | undefined, spreadSheetURl?:string | undefined, ruleObjects?:string | undefined, privateKb?:boolean | undefined) {
       super();
       this.uid = uid;
       this.userName = userName;
@@ -85,6 +93,7 @@ export default class KnowledgeBase extends StorableFunctions {
       this.spreadSheetURL = spreadSheetURl;
       this.ruleObjects = ruleObjects;
       this.createdAt = Date.now();
+      this.privateKb = privateKb;
     }
 }
 

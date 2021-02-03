@@ -5,7 +5,7 @@ import * as functions from "firebase-functions";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import * as express from "express";
 
-const morgan = require("morgan");
+// const morgan = require("morgan");
 
 
 const auth = require("./middleware/middleAuth");
@@ -25,6 +25,9 @@ const {
 
 const {
   getKBs,
+  publish,
+  publicUrl,
+  deleteKb,
   getByWhere,
   getById,
   makeKB,
@@ -34,14 +37,14 @@ const {
 
 const cors = require("cors")({origin: true});
 app.use(cors);
-app.use(morgan("tiny"));
+// app.use(morgan("tiny"));
 // Todos
-
-
+app.get("/publish/:id", auth, publish);
+app.get("/published/:id", publicUrl);
 app.get("/kb", auth, getKBs);
 app.get("/kbs", getByWhere);
 app.get("/find/:id", getById);
-
+app.get("/delete/:id", auth, deleteKb);
 
 app.post("/create", auth, makeKB);
 

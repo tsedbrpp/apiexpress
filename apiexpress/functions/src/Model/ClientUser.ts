@@ -3,6 +3,13 @@ import StorableFunctions from "./StorableFunctions";
 
 // eslint-disable-next-line require-jsdoc
 export default class ClientUser extends StorableFunctions {
+  get role(): string {
+    return this._role;
+  }
+
+  set role(value: string) {
+    this._role = value;
+  }
   // eslint-disable-next-line require-jsdoc
   get createdAt(): Number | undefined {
     return this._createdAt;
@@ -32,7 +39,7 @@ export default class ClientUser extends StorableFunctions {
   set numberOfSystems(value: number | undefined) {
     this._numberOfSystems = value;
   }
-
+    private _role:string = "user"
     private _createdAt: Number | undefined = 0
     private _firstName: string | undefined = "";
     private _lastName: string | undefined = "";
@@ -53,8 +60,9 @@ export default class ClientUser extends StorableFunctions {
       this.photoUrl = photoUrl ? photoUrl: "unknown";
       this.email = email;
       this.numberOfSystems = numberOfSystems;
-      this.runLimit = 300;
+      this.runLimit = 0;
       this.createdAt = Date.now();
+      this.role = "user";
     }
 
 

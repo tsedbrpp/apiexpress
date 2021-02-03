@@ -13,7 +13,6 @@ class RuleObjectConverters implements IConverter {
 
   // eslint-disable-next-line require-jsdoc
   public toFirestore(kb:any): firestore.DocumentData {
-    console.log("ruleObj converter");
     const test = {ruleObjects: kb.ruleObjects};
     return test;
   }

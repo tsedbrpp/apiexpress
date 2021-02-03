@@ -17,21 +17,21 @@ class UserConverters implements IConverter {
       photoUrl: obj.photoUrl,
       email: obj.email,
       runLimit: obj.runLimit,
-      numberOfSystems: obj.numberOfSystems
+      numberOfSystems: obj.numberOfSystems,
     };
   }
 
   // eslint-disable-next-line max-len,require-jsdoc
   public fromFirestore(snapshot:DocumentSnapshot, options:firebase.firestore.SnapshotOptions): ClientUser | null {
-    const data = snapshot.data() ;
+    const data = snapshot.data();
 
     if (data) {
       // eslint-disable-next-line max-len
-      const user = new ClientUser(data.uid, data.userName, data.photoUrl, data.email,data.runLimit,data.numberOfSystems);
-       console.log( snapshot.id + " snapshot from userconverter")
-     user.id = snapshot.id;
-     console.log(" user is " + user.id)
-     return user;
+      const user = new ClientUser(data.uid, data.userName, data.photoUrl, data.email, data.runLimit, data.numberOfSystems);
+
+      user.id = snapshot.id;
+
+      return user;
     }
     console.log("no data");
     return null;

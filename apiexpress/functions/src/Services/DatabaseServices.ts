@@ -15,14 +15,13 @@ import {firestore} from "firebase-admin/lib/firestore";
 const databaseServices = class DatabaseServices {
   // eslint-disable-next-line max-len,require-jsdoc
   public static async editCollection(collection: string, id: string | undefined, value: IStoreable, converter: IConverter): Promise<string> {
-    console.log( " edit id " + id);
+    // console.log( " edit id " + id);
     const document = await db.collection(collection).doc(id);
 
     if (converter) {
       const newDoc = converter.toFirestore(value);
 
       try {
-        console.log("newdoc");
         //   console.log(newDoc);
         await document.update(newDoc);
         return "Updated successfully";
@@ -39,15 +38,12 @@ const databaseServices = class DatabaseServices {
     try {
       if (!id) return "error no id";
       const documentRef = await db.collection(collection).doc(id);
-      const increment = await firestore.FieldValue.increment(1);
-      console.log("before update");
+      const increment = await firestore.FieldValue.increment(count);
+
       const obj = {[field]: increment};
-      console.log(obj);
+
       documentRef.update(obj);
-      const result = await documentRef.get();
-      console.log("after incrementincrement");
-      console.log(result);
-      return result.data[field];
+      return "updated";
     } catch (error) {
       console.log(error);
       return error;
@@ -72,6 +68,20 @@ const databaseServices = class DatabaseServices {
   }
 
   // eslint-disable-next-line max-len,require-jsdoc
+  public static async deleteIdFromCollection(collection: string, id: string | undefined): Promise<string> {
+    const documentRef = await db.collection(collection).doc(id);
+    try {
+      if (documentRef) {
+        await documentRef.delete();
+        return "deleted";
+      } else return "something went wrong";
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
+  }
+
+  // eslint-disable-next-line max-len,require-jsdoc
   public static async getAllFromCollection(collection: string, converter:IConverter): Promise<Array<IStoreable | null>> {
     if (converter) {
       try {
@@ -82,7 +92,6 @@ const databaseServices = class DatabaseServices {
         if (!postSnap.empty) {
           postSnap.forEach((doc:any) => {
             if (converter) {
-              console.log("from getall" + doc.id );
               results.push(converter.fromFirestore(doc, {}));
             }
           });
