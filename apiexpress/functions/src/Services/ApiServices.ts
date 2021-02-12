@@ -28,7 +28,7 @@ export default class ApiServices {
           error: error,
           jsonString: "",
           status: error.response.status,
-          message: "Request made and server responded",
+          message: "Can't find spreadsheet URL - please update",
         };
         //  console.log(error.response.headers);
       } else if (error.request) {

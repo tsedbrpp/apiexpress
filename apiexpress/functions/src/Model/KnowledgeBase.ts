@@ -4,14 +4,25 @@ import StorableFunctions from "./StorableFunctions";
 // eslint-disable-next-line require-jsdoc
 export default class KnowledgeBase extends StorableFunctions {
   // eslint-disable-next-line require-jsdoc
+  get publishedURL(): string | undefined {
+    return this._publishedURL;
+  }
+
+  // eslint-disable-next-line require-jsdoc
+  set publishedURL(value: string | undefined) {
+    this._publishedURL = value;
+  }
+  // eslint-disable-next-line require-jsdoc
   get privateKb(): boolean | undefined {
     return this._privateKb;
   }
 
+  // eslint-disable-next-line require-jsdoc
   set privateKb(value: boolean | undefined) {
     this._privateKb = value;
   }
 
+  // eslint-disable-next-line require-jsdoc
   get userName() {
     return this._userName;
   }
@@ -81,10 +92,13 @@ export default class KnowledgeBase extends StorableFunctions {
     private _title: string | undefined;
     private _description: string | undefined;
     private _spreadSheetURL : string | undefined;
-    private _ruleObjects: string | undefined;
+   private _ruleObjects : string | undefined;
+    private _publishedURL: string | undefined;
 
     // eslint-disable-next-line max-len,require-jsdoc
-    constructor(uid?:string, userName?:string | undefined, title?:string | undefined, description?:string | undefined, spreadSheetURl?:string | undefined, ruleObjects?:string | undefined, privateKb?:boolean | undefined) {
+    constructor(uid?:string, userName?:string | undefined, title?:string | undefined, description?:string | undefined, spreadSheetURl?:string | undefined,
+        // eslint-disable-next-line max-len
+        ruleObjects?:string | undefined, privateKb?:boolean | undefined, publishedURL?:string | undefined) {
       super();
       this.uid = uid;
       this.userName = userName;
@@ -94,6 +108,7 @@ export default class KnowledgeBase extends StorableFunctions {
       this.ruleObjects = ruleObjects;
       this.createdAt = Date.now();
       this.privateKb = privateKb;
+      this.publishedURL = publishedURL;
     }
 }
 

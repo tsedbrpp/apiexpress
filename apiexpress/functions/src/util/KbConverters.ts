@@ -20,6 +20,8 @@ class KbConverters implements IConverter {
       spreadSheetURL: kb.spreadSheetURL,
       ruleObjects: kb.ruleObjects,
       privateKb: kb.privateKb,
+      createdAt: kb.createdAt,
+      published: kb.publishedURL,
     };
   }
   // eslint-disable-next-line max-len,require-jsdoc
@@ -28,7 +30,7 @@ class KbConverters implements IConverter {
     const data = snapshot.data();
     if (data) {
       // eslint-disable-next-line max-len
-      const kb = new KnowledgeBase( data.uid, data.userName, data.title, data.description, data.spreadSheetURL, data.ruleObjects, data.privateKb);
+      const kb = new KnowledgeBase( data.uid, data.userName, data.title, data.description, data.spreadSheetURL, data.ruleObjects, data.privateKb, data.publishedURL);
       kb.id = snapshot.id;
       return kb;
     }

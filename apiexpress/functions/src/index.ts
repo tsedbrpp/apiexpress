@@ -6,7 +6,8 @@ import * as functions from "firebase-functions";
 import * as express from "express";
 
 // const morgan = require("morgan");
-
+// @ts-ignore
+const {userValidationRules, validate} = require("./middleware/validate");
 
 const auth = require("./middleware/middleAuth");
 
@@ -18,20 +19,21 @@ const app = express();
 
 
 const {
-  getUsers,
-  getUserById,
+  postSendMail,
+  getLoggedInUser,
   loginUser,
 } = require("./APIs/user");
 
 const {
-  getKBs,
+  getKBsbyUser,
   publish,
   publicUrl,
   deleteKb,
   getByWhere,
   getById,
   makeKB,
-  updateKb,
+  updateRulebase,
+  editKb,
 } = require("./APIs/kb");
 
 
@@ -41,34 +43,20 @@ app.use(cors);
 // Todos
 app.get("/publish/:id", auth, publish);
 app.get("/published/:id", publicUrl);
-app.get("/kb", auth, getKBs);
+app.get("/mine", auth, getKBsbyUser);
 app.get("/kbs", getByWhere);
 app.get("/find/:id", getById);
-app.get("/delete/:id", auth, deleteKb);
+app.delete("/delete/:id", auth, deleteKb);
 
 app.post("/create", auth, makeKB);
 
-app.get("/users", getUsers),
-app.get("/user/:id", getUserById);
+
+app.get("/user", auth, getLoggedInUser);
 app.post("/loginpage", loginUser);
+app.post("/postSendMail", postSendMail);
+app.put("/updateRules/:id", auth, updateRulebase);
+app.put("/editKb/:id", auth, userValidationRules(), validate, editKb);
 
-app.post("/updateKb", auth, updateKb);
-
-/* app.get('/todo/:todoId', auth, getOneTodo);
-app.post('/todo',auth, postOneTodo);
-app.delete('/todo/:todoId',auth, deleteTodo);
-app.put('/todo/:todoId',auth, editTodo);
-app.post('/postSendMail', postSendMail);
-app.get('/testItOut',testItOut)
-app.get('/bigben', bigben);
-*/
-// Users
-/* app.post('/login', loginUser);
-app.post('/signup', signUpUser);
-app.post('/user/image', auth ,uploadProfilePhoto);
-app.post('/user', auth ,updateUserDetails);
-app.get('/user', auth, getUserDetail);
-app.get('/admin/todo', auth, getAdminTodos);*/
 exports.api = functions.https.onRequest(app);
 import onCreateUser from "./Services/OnCreateUser";
 
